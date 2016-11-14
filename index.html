@@ -20,26 +20,21 @@
 
   
     <!--[if lte IE 8]>
-        <link rel="stylesheet" href="css/layouts/gallery-grid-old-ie.css">
+        <link rel="stylesheet" href="/combo/1.18.13?/css/layouts/gallery-grid-old-ie.css&/css/layouts/gallery-old-ie.css">
     <![endif]-->
     <!--[if gt IE 8]><!-->
-        <link rel="stylesheet" href="css/layouts/gallery-grid.css">
-    <!--<![endif]-->
-  
-
-  
-    <!--[if lte IE 8]>
-        <link rel="stylesheet" href="css/layouts/gallery-old-ie.css">
-    <![endif]-->
-    <!--[if gt IE 8]><!-->
-        <link rel="stylesheet" href="css/layouts/gallery.css">
+        <link rel="stylesheet" href="/css/layouts/gallery.css">
     <!--<![endif]-->
   
 
 
     
+<!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
+<![endif]-->
 
-    
+
+
 
 </head>
 <body>
@@ -51,11 +46,22 @@
 
 
 <div>
+    <div class="header">
+        <div class="pure-menu pure-menu-horizontal">
+            <a class="pure-menu-heading" href="">Photo Gallery</a>
+
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">Home</a></li>
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Blog</a></li>
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">About</a></li>
+            </ul>
+        </div>
+    </div>
 
     <div class="pure-g">
         <div class="photo-box u-1 u-med-1-3 u-lrg-1-4">
             <a href="http://www.dillonmcintosh.tumblr.com/">
-                <img src="https://s3-us-west-2.amazonaws.com/photo-original/l/qPCLrsJ-l.jpg"
+                <img src="http://24.media.tumblr.com/d6b9403c704c3e5aa1725c106e8a9430/tumblr_mvyxd9PUpZ1st5lhmo1_1280.jpg"
                      alt="Beach">
             </a>
 
@@ -73,7 +79,7 @@
 
         <div class="photo-box u-1 u-med-1-2 u-lrg-1-3">
             <a href="http://ngkhanhlinh.dunked.com/">
-                <img src="https://s3-us-west-2.amazonaws.com/photo-original/l/SstQQt3-l.jpg"
+                <img src="http://31.media.tumblr.com/aa1779a718c2844969f23c4f5dec86b1/tumblr_mvyxhonf601st5lhmo1_1280.jpg"
                      alt="Meadow">
             </a>
 
@@ -162,13 +168,39 @@
             </aside>
         </div>
 
+        <div class="u-1 form-box">
+            <div class="l-box">
+                <h2>Submit a Photo</h2>
 
+                <form class="pure-form">
+                    <input type="text" placeholder="Photo URL" required>
+                    <input type="text" placeholder="Email">
+                    <button type="submit" class="pure-button">Submit</button>
+                </form>
+            </div>
+        </div>
 
+        <div class="u-1">
+            <div class="l-box">
+                <h2>Creating a Photo Gallery Layout</h2>
 
+                <p>
+                    This page shows how to make a photo gallery using <a href="/grids/">Pure Grids</a>. Using Pure, we can create interesting layouts such as this photo gallery. This layout is fully responsive. We've added a bit of custom media queries on top of the responsive grid provided by Pure.
+                </p>
+
+                <p>
+                    We've also taken advantage of <a href="/forms/">Pure Forms</a> and <a href="/menus/">Pure Menus</a>. This example uses a form with the <code>pure-form</code> class name to create an inline form. We use <a href="/buttons/">Pure Buttons</a> for the button styling.
+                </p>
+            </div>
+        </div>
     </div>
 
-
+    <div class="footer">
+        View the source of this layout to learn more. Made with love by the YUI Team.
+    </div>
 </div>
+
+
 
 
 
